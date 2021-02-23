@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -43,9 +44,11 @@
        
         .topRightInfo {
             float: right;
+            
             background-color: rgb(150, 150, 150);
             width: 55%;
-
+            height: 35%;
+            overflow-y: auto;
         }
         
         .topRightText {
@@ -53,6 +56,7 @@
             font-size: 85%;
             font-family: "Comic Sans MS", sans-serif;
             padding-left: 6px;
+            overflow-y: auto;
         }
         ul {
             font-size: 85%;
@@ -72,10 +76,11 @@
             <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png/220px-Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png" width = "44%" class = "jabbaPict">
             <div class ="topRightInfo">
                 <h2 class = "topRightText"> Things to Know about Your Jabba the Hutt:</h2> <ul>
-                <li> Quick Tempered and Extremely Dangerous </li>
-                <li> Not Cute, yet Entertaining. </li>
-                <li>Extrememly Costly, eating up to 10 frogs a day.</li>
+                <li> Quick tempered and extremely dangerous </li>
+                <li> Not cute, yet entertaining. </li>
+                <li>Extrememly costly, eating up to 10 frogs a day.</li> <li>Each has a palace, aquirable through tax claims.<li>
                 </ul>
+                
             </div>
             <h1> 
                 
@@ -83,7 +88,18 @@
                 <p> jabba <p>
             </div>
             
-            
+        
+<script>
+//Thanks to Matt M for this
+    var mainBody = document.getElementsByClassName('mainBody')[0],
+        mainHeight = window.getComputedStyle(mainBody).height;
+    
+    mainHeight = mainHeight.substring(0, mainHeight.length - 3);
+    
+    var topRightInfo = document.getElementsByClassName('topRightInfo')[0];
+    
+    topRightInfo.style.height = (mainHeight * 0.68) + 'px';
+</script>
 
     </body>
 </html>
