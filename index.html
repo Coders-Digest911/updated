@@ -6,7 +6,7 @@
         <title>wip</title>
         <style>
         body {
-            background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2018/06/jabba-sideshow-tall.jpg);
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/27/A_starry_sky_above_Death_Valley_and_Orionid.jpg);
         }
           .topBar {
             background-color: rgb(21, 130, 43);
@@ -16,7 +16,7 @@
             left: 0px;
             text-align: center;
             width: 100%;
-            height: 39px;
+            height: 9%;
             font-family: "Comic Sans MS", sans-serif;
             font-size:9px;
             padding: 0px;
@@ -34,6 +34,7 @@
             left: 1%;
             z-index: 0;
             width: 96%;
+            height: 1115%;
             padding: 1%;
         }
         
@@ -47,23 +48,29 @@
             
             background-color: rgb(150, 150, 150);
             width: 55%;
-            height: 35%;
-            overflow-y: auto;
+            height: 45%;
         }
         
         .topRightText {
             text-align: center;
-            font-size: 85%;
+            position: absolute;
+            top: -2.0%;
+            background-color: rgb(212, 212, 212);
+            font-size: 312%;
+            width: 53%;
             font-family: "Comic Sans MS", sans-serif;
             padding-left: 6px;
             overflow-y: auto;
         }
-        ul {
-            font-size: 85%;
-            font-family: "Comic Sans MS", sans-serif;
-        }
+
         .topRightInfo:hover {
         background-color: rgb(21, 130, 43);
+        }
+        
+        .jabbaPict {
+            position: absolute;
+            top: 8%;
+            left: 1%;
         }
         </style>
             
@@ -72,34 +79,19 @@
             <div class = "topBar">
                 <h1> JABBA THE HUTT ADOPTION GUIDE</h1>
             </div>
-            <div class = "mainBody">
             <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png/220px-Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png" width = "44%" class = "jabbaPict">
             <div class ="topRightInfo">
-                <h2 class = "topRightText"> Things to Know about Your Jabba the Hutt:</h2> <ul>
-                <li> Quick tempered and extremely dangerous </li>
-                <li> Not cute, yet entertaining. </li>
-                <li>Extrememly costly, eating up to 10 frogs a day.</li> <li>Each has a palace, aquirable through tax claims.<li>
-                </ul>
+                <h2 class = "topRightText"> JABBA THE HUTT</h2> 
                 
             </div>
             <h1> 
                 
             </h1>
-                <p> jabba <p>
-            </div>
+                <p> jabba </p>
+            
             
         
-<script>
-//Thanks to Matt M for this
-    var mainBody = document.getElementsByClassName('mainBody')[0],
-        mainHeight = window.getComputedStyle(mainBody).height;
-    
-    mainHeight = mainHeight.substring(0, mainHeight.length - 3);
-    
-    var topRightInfo = document.getElementsByClassName('topRightInfo')[0];
-    
-    topRightInfo.style.height = (mainHeight * 0.68) + 'px';
-</script>
+
 
     </body>
 </html>
