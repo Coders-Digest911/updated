@@ -1,96 +1,153 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
-        <title>wip</title>
+        <title>k</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Righteous&display=swap" rel="stylesheet">
         <style>
-        body {
-            background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/27/A_starry_sky_above_Death_Valley_and_Orionid.jpg);
+        #jabbaPict {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
         }
-          .topBar {
-            background-color: rgb(21, 130, 43);
-            color: rgb(255, 255, 255);
-            position: fixed;
-            top: -12px;
-            left: 0px;
-            text-align: center;
-            width: 100%;
-            height: 9%;
-            font-family: "Comic Sans MS", sans-serif;
-            font-size:9px;
-            padding: 0px;
-            z-index: 1;
-            vertical-align: middle;
-        }
-            .topBar:hover {
-            background-color: rgb(56, 148, 75);
+         h2 {
+               color: rgb(0, 179, 42);
+           }
             
-           
-        }
-        .mainBody {
-           
-            position: absolute;
-            top: 27px;
-            left: 1%;
-            z-index: 0;
-            width: 96%;
-            height: 1115%;
-            padding: 1%;
-        }
-        
-
-        
-       body {
-           position: absolute;
-           top: 6%;
-           width: 100%;
-       }
-        .topRightInfo {
+            #topBar {
+                background-color:rgb(88,143, 39);
+                position: absolute;
+                top: 0px;
+                left:0px;
+                width: 100%;
+                
+                font-family:"righteous";
+                    z-index: 2;
+            }
+             #topBarFixed {
+                background-color:rgb(88,143, 39);
+                position: fixed;
+                top: 0px;
+                left:0px;
+                width: 100%;
+                font-family:"righteous";
+                z-index: 3;
+                text-align: center;
+            }
             
-            
-            background-color: rgb(150, 150, 150);
-            width: 55%;
-            height: 124%;
-            border: dashed;
-        }
-        
-        .topRightText {
-            text-align: center;
-            font-size: 219%;
-
-            font-family: "Comic Sans MS", sans-serif;
-            padding-left: 6px;
-            overflow-y: auto;
-        }
-
-        .topRightInfo:hover {
-        background-color: rgb(21, 130, 43);
-        }
-        
-        .jabbaPict {
-          float:right;
-        }
+            #topBarMessageFixed {
+                text-align: center;
+            }
+            #topBarMessage { 
+                text-align: center;
+            }
+            #one {
+              padding-left: 1%;
+            }
+            #two {
+               padding-left: 32%;
+            }
+            #three {
+               padding-left: 43%;
+            }
+            #one:hover {
+             color: rgb(50, 50, 50);
+            }
+            #two:hover {
+              color: rgb(50, 50, 50);
+            }
+            #three:hover {
+               color: rgb(50, 50, 50);
+            }
+             
+            #mainBody {
+                position: absolute;
+                top: 28%;
+                left:4%;
+                width: 90%;
+                padding: 1%;
+                background-color: rgb(204, 204, 204);
+               
+            }
+            h1 {
+                text-align: center;
+                font-family: audiowide;
+            }
+           .middle {
+               float: right;
+           }
         </style>
-            
     </head>
     <body>
-            <div class = "topBar">
-                <h1> JABBA THE HUTT ADOPTION GUIDE</h1>
-            </div>
-            <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png/220px-Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png" width = "43%" class = "jabbaPict">
-            <div class ="topRightInfo">
-                <h2 class = "topRightText"> JABBA THE HUTT</h2> 
-                
-            </div>
-            <h1> 
-                
-            </h1>
-                <p> jabba </p>
-            
-            
+    <div id="topBar"> 
+       <div >J a b b a The Hutt Adoption Guide</div>
+        <h4> <span id = "one">    About</span>
+         <span id = "two">    Adopt</span>
+         <span id = "three">    Care</span> </h4>
+    </div>
+    <div id="topBarFixed">
+    <div >Jabba The Hutt Adoption Guide</div>
+    </div>
+    <div id = "mainBody">
+        <h2>
+            Who Is Jabba the Hutt? 
+        </h2>
+        <p> Jabba the Hutt is a hideous crime lord from Star Wars. He paid for Han Solo to be frozen in carbonite (proving that money is better than a blaster), and owned a fabulous palace on Tatooine.  </p> <h2>
+            Why Should I Adopt One?
+        </h2>
+        <p> After the Jabba the Hutt was choked by Leia Organeo (pun intended), Jabba the Hutts are feeling insecure without their palaces. Many need a  loving, caring family to live the rest of their lives with. </p>
+        <h2>
+            Thank you!
+        </h2>
+        <p> Not many people even consider adopting a Jabba the Hutt, so thank you for even considering taking in one of these crime lords into your home. </p>
+        <h2>
+            DISCLAIMER:
+        </h2>
+        <p> We are NOT responsible for any damage caused to any of you, your possessions, your friends, the world, siblings, family members, etc., and so on and so forth and what have you. </p>
+    </div>
+    
+    <div id = "footer">
         
+    </div>
+    <script>
+        var mainBodyEl = document.getElementById('mainBody');
+        var aboutEl = document.getElementById('one');
+        var adoptEl = document.getElementById('two');
+        var careEl = document.getElementById('three');
+        var topBarFixedEl = document.getElementById('topBarFixed');
+        
+        var topBarEl = document.getElementById('topBar');
+        var topBarEl = document.getElementById('topBar');
+        
+        var changeOne = function(){
+            mainBodyEl.innerHTML = "<h1> About</h1><h2> Good Attributes:</h2><ul> <li> You can't understand a word he says. <li> You can keep his frogs as pets, too! <li> He requires no attention; Salacious Crumb does that!</ul><h2> Most Famous Appearances:</h2><p>Notable throughout the Star Wars universe, Jabba the Hutt also appears in:</p><ul><li> Inflatable portraits across the country.<li> Posters across the country.<li> My dreams (sometimes).</ul><h2>For Entertainment:</h2><p> Jabba the Hutt is amazing for entertainment. Whether you enjoy seeing him replicate famous Star Wars poses, or if you love to watch him eat frogs, living life will always be enjoyable with your very own Jabba the Hutt. </p><img  src = https://upload.wikimedia.org/wikipedia/en/5/53/Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png id = jabbaPict></img> <br><br>";
+        };
+        var changeTwo = function(){
+            mainBodyEl.innerHTML = '<h1> Adopt</h1><h2>Why Adopt?</h2> <p>Adopting a Jabba the Hutt can give you the needed experience to get a job like a manager position, a office job, or a royal ruler. You will eat less food because seeing your Jabba the Hutt slurp down frogs makes everyone naseus. But other than that, Jabba the Hutts are very good training for putting your self supreme over others!</p><h2>How To Get One:</h2><p> Although Jabba the Hutts are rare, you may be able to locate one at your  locale Human Society. You can check Petfiner <a href = "https://www.petfinder.com/search/scales-fins-others-for-adoption/mx/zacatecas/99990/?age%5B0%5D=Senior&name=JABBA+THE+HUTT&size%5B0%5D=Extra+Large" target = "_blank"> here</a> to see if you have a Jabba the Hutt near you (enter your ZIP code into the bar). Some Jabba the Hutt breaders won"t share their Jabba the Hutts, so you"ll need to find a breeder that has enough Jabba the Hutts on their hands. They are a handful!</p> <h2>Experience Needed:</h2> <p> If you have demonstrated proper care for other pets like Jabba the Hutts, such as slugs, dictators, egos, or snails, you have the needed experience!</p> ';
+        };
+var changeThree = function(){
+    mainBodyEl.innerHTML = '<h2> Should You Take Your Jabba The Hutts on Walks?</h2><p> If you annoy your Jabba the Hutt in any way, there is sure to be collateral damage to your house, community, and the world. For health purposes, it is highly, highly, highly, highly, highly recomended that you <strong id = "DONOT">DO NOT </strong>take your Jabba the Hutt on a walk.</p><h2> How to Keep Your Jabba The Hutt from Losing its Temper and Causing Collateral Damage:</h2><p>  First off, dont take your Jabba the Hutt on a walk. Next, ensure that your Jabba the Hutt always has a stock of frogs/fish/slug thingies. Dont tell him not to do anything. Dont tell him he has to wear a mask because of a pandemic. Make sure that Salicious Crumb is always nearby to make Jabba laugh. Dont tell him to eat dry, dog food. Dont tell him to put on clothes. Dont tell him to do his homework. Dont tell him that hes a slug. Dont tell him hes not famous throughout the world. Dont tell him that people dont like slugs. Dont tell him that people step/smush/slap slugs. Dont tell him that his favorite team lost the Super Bowl. Dont tell him that youre not telling him stuff to keep him peacable and not causing collateral damage. Dont tell him to drink more water. Dont tell him to get outside more. Dont tell him that he is portrayed as a villian in Star Wars. Dont tell him that Leia Skywalker ###### ### (this portion has been edited so that Jabba the Hutt doesnt destroy the world in rage). Dont tell him that youve disabled him viewing his own likes, because they are... dismal. Dont tell him that most people do not consider Jabba the Hutt when deciding where to donate fresh, juicy frogs to. Dont show him these guidelines.</p><h2> How to Aquire Your Jabba the Hutts Palace Through Tax Claims:</h2><p> Have you ever wanted Jabba the Hutts palace? Well, you can claim its possession when Jabba the Hutt attemptes to hijack your finaces by relying on your money to eat his frogs. Allow him to eat your frogs for 90 days before filing your taxes, and then file a JTH Palace Possesion claim to take over Jabba the Hutts Palace. All assests are in your possesion, and all droids are to be set free. If he attempts to sue you, relinquish him from pethood, and he will not be able to sue you. You can also file JTH Palace Destruction without Proper Notification to destroy his palace without the Essensitial Jabba the Hutt Services department notifying your Jabba the Hutt. </p><h2>Hutt-proofing 101:</h2><p> When introducting a Jabba the Hutt to your home, dont show him where the frogs and/or candy is.</p><h2 id = "jabba-right?"> Is a Jabba The Hutt Right For You?</h2>If you like temper tantrums, the smell of disentegrating frogs, and constantly not telling your Jabba the Hutt general information about the world, then you will enjoy having a Jabba the Hutt. ';
 
 
+};
+        
+        var unmove = function(){
+          topBarEl.style.position = "absolute";
+        
+        };
+        var move = function(){
+            topBarEl.style.position = "fixed";
+        };
+        
+        aboutEl.addEventListener('click', changeOne);
+        adoptEl.addEventListener('click', changeTwo);
+        careEl.addEventListener('click', changeThree)
+        
+        topBarFixedEl.addEventListener('mouseover', move);
+        topBarEl.addEventListener('mouseover', move)
+        topBarFixedEl.addEventListener('mouseout', unmove);
+        topBarEl.addEventListener('mouseout', unmove);
+    </script>
     </body>
 </html>
